@@ -1,6 +1,6 @@
 {
   "createdAt": "2026-02-20T19:26:47.962Z",
-  "updatedAt": "2026-04-26T14:50:19.309Z",
+  "updatedAt": "2026-04-26T14:56:38.485Z",
   "id": "IeiQIvPwcMMEYjVr",
   "name": "YouTube Upload Analysis FIXED",
   "active": false,
@@ -517,7 +517,8 @@
         -128
       ],
       "id": "ebff038b-d23c-461c-bae3-a7839b0b9ed6",
-      "name": "Send to Marketing Team1"
+      "name": "Send to Marketing Team1",
+      "onError": "continueRegularOutput"
     },
     {
       "parameters": {
@@ -11088,7 +11089,7 @@
       }
     ]
   },
-  "versionId": "336300a6-ec83-4748-8f43-774893380272",
+  "versionId": "997eb55c-c7f1-48fb-89d5-0c974e866500",
   "triggerCount": 4,
   "shared": [
     {
