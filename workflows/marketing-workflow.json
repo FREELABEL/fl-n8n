@@ -1,6 +1,6 @@
 {
   "createdAt": "2026-02-20T19:26:47.962Z",
-  "updatedAt": "2026-04-26T14:11:31.615Z",
+  "updatedAt": "2026-04-26T14:27:07.181Z",
   "id": "IeiQIvPwcMMEYjVr",
   "name": "YouTube Upload Analysis FIXED",
   "active": false,
@@ -2073,7 +2073,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "https://raichu.heyiris.io/api/v1/labs/queue/youtube-to-clip",
+        "url": "http://api-nginx:80/api/v1/labs/queue/youtube-to-clip",
         "sendHeaders": true,
         "headerParameters": {
           "parameters": [
@@ -2112,7 +2112,7 @@
             },
             {
               "name": "lut_file",
-              "value": "/Users/mayoalexander/sites/freelabel/fl-api/storage/app/utils/shutterstock/HardBoost.cube"
+              "value": "/var/www/html/storage/app/utils/shutterstock/HardBoost.cube"
             },
             {
               "name": "lut_percentage",
@@ -2154,7 +2154,10 @@
               "name": "social_media_type",
               "value": "REELS"
             }
-          ]
+          ],
+          "parameters[6]": {
+            "value": "/var/www/html/storage/app/utils/shutterstock/HardBoost.cube"
+          }
         },
         "options": {}
       },
@@ -11085,7 +11088,7 @@
       }
     ]
   },
-  "versionId": "5174143b-6f3e-455f-997a-30d3775e51f7",
+  "versionId": "96fb4620-e53d-4875-ab5e-63f632c50c0a",
   "triggerCount": 4,
   "shared": [
     {
