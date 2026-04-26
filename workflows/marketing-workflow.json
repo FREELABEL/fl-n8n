@@ -1,6 +1,6 @@
 {
   "createdAt": "2026-02-20T19:26:47.962Z",
-  "updatedAt": "2026-04-26T14:27:07.181Z",
+  "updatedAt": "2026-04-26T14:50:19.309Z",
   "id": "IeiQIvPwcMMEYjVr",
   "name": "YouTube Upload Analysis FIXED",
   "active": false,
@@ -507,7 +507,7 @@
         "url": "DISCORD_WEBHOOK_PLACEHOLDER",
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={{ JSON.stringify({ username: 'Discover Daily', embeds: [{ title: (function() { try { return $('CHOOSE ONLY ONE').item.json.content?.title || $('Extract JSON').item.json.title || 'New content published'; } catch(e) { return 'New content published'; } })(), url: (function() { try { return 'https://freelabel.net/content/video/' + ($('PUBLISH TO FL').item.json.content.id || ''); } catch(e) { return 'https://freelabel.net'; } })(), description: (function() { try { var d = $('FETCH YT DATA').item.json.data.video.description || ''; return d.substring(0, 200) + (d.length > 200 ? '...' : ''); } catch(e) { return ''; } })(), color: 16729156, image: { url: (function() { try { return $('FETCH YT DATA').item.json.data.video.thumbnails.maxres.url || ''; } catch(e) { return ''; } })() }, fields: [{ name: '\ud83c\udfac Watch', value: '[Open on FreeLabel](' + (function() { try { return 'https://freelabel.net/content/video/' + $('PUBLISH TO FL').item.json.content.id; } catch(e) { return 'https://freelabel.net'; } })() + ')', inline: true }, { name: '\ud83d\udcfa YouTube', value: '[Original Video](https://youtube.com/watch?v=' + (function() { try { return $('Extract JSON').item.json.media_id || ''; } catch(e) { return ''; } })() + ')', inline: true }], footer: { text: 'Discover Daily | FreeLabel' }, timestamp: new Date().toISOString() }] }) }}",
+        "jsonBody": "={{ JSON.stringify({ username: 'Discover Daily', embeds: [{ title: (function() { try { return $('PUBLISH TO FL').item.json.content?.title || $input.item.json.content?.title || 'New content published'; } catch(e) { return $input.item.json.content?.title || 'New content published'; } })(), url: (function() { try { return 'https://freelabel.net/content/video/' + ($('PUBLISH TO FL').item.json.content.id || ''); } catch(e) { return 'https://freelabel.net'; } })(), description: (function() { try { var d = $('FETCH YT DATA').item.json.data.video.description || ''; return d.substring(0, 200) + (d.length > 200 ? '...' : ''); } catch(e) { return ''; } })(), color: 16729156, image: { url: (function() { try { return $('FETCH YT DATA').item.json.data.video.thumbnails.maxres.url || ''; } catch(e) { return ''; } })() }, fields: [{ name: '\ud83c\udfac Watch', value: '[Open on FreeLabel](' + (function() { try { return 'https://freelabel.net/content/video/' + $('PUBLISH TO FL').item.json.content.id; } catch(e) { return 'https://freelabel.net'; } })() + ')', inline: true }, { name: '\ud83d\udcfa YouTube', value: '[Original Video](https://youtube.com/watch?v=' + (function() { try { return $('Extract JSON').item.json.media_id || ''; } catch(e) { return ''; } })() + ')', inline: true }], footer: { text: 'Discover Daily | FreeLabel' }, timestamp: new Date().toISOString() }] }) }}",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
@@ -2112,7 +2112,7 @@
             },
             {
               "name": "lut_file",
-              "value": "/var/www/html/storage/app/utils/shutterstock/HardBoost.cube"
+              "value": "/Users/mayoalexander/sites/freelabel/fl-api/storage/app/utils/shutterstock/HardBoost.cube"
             },
             {
               "name": "lut_percentage",
@@ -2452,7 +2452,7 @@
         "url": "DISCORD_WEBHOOK_PLACEHOLDER",
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={{ JSON.stringify({ username: \"Content Pipeline\", embeds: [{ title: ($('Extract JSON').item.json.title || 'New Upload Published'), description: \"**\" + $('Extract JSON').item.json.title + \"**\n\n\" + ($('FETCH YT DATA').item.json.data.video.description ? $('FETCH YT DATA').item.json.data.video.description.substring(0, 300) + \"...\" : \"\") + \"\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**Pipeline Status:**\n\u2705 Published to FL\n\u2705 Added to Buffer queue\n\u2705 SOM outreach dispatched\n\n\ud83d\udd17 View: https://web.freelabel.net/content/video/\" + ($json.content ? $json.content.id : \"\"), color: 5763719, image: { url: $('FETCH YT DATA').item.json.data.video.thumbnails.maxres ? $('FETCH YT DATA').item.json.data.video.thumbnails.maxres.url : \"\" }, footer: { text: \"FreeLabel Content Pipeline\" }, timestamp: new Date().toISOString() }] }) }}",
+        "jsonBody": "={{ JSON.stringify({ username: \"Content Pipeline\", embeds: [{ title: ($('PUBLISH TO FL').item.json.content?.title || $input.item.json.content?.title || 'New Upload Published'), description: \"**\" + ($('PUBLISH TO FL').item.json.content?.title || $input.item.json.content?.title || 'Untitled') + \"**\n\n\" + ($('FETCH YT DATA').item.json.data.video.description ? $('FETCH YT DATA').item.json.data.video.description.substring(0, 300) + \"...\" : \"\") + \"\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**Pipeline Status:**\n\u2705 Published to FL\n\u2705 Added to Buffer queue\n\u2705 SOM outreach dispatched\n\n\ud83d\udd17 View: https://web.freelabel.net/content/video/\" + ($json.content ? $json.content.id : \"\"), color: 5763719, image: { url: $('FETCH YT DATA').item.json.data.video.thumbnails.maxres ? $('FETCH YT DATA').item.json.data.video.thumbnails.maxres.url : \"\" }, footer: { text: \"FreeLabel Content Pipeline\" }, timestamp: new Date().toISOString() }] }) }}",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
@@ -11088,7 +11088,7 @@
       }
     ]
   },
-  "versionId": "96fb4620-e53d-4875-ab5e-63f632c50c0a",
+  "versionId": "336300a6-ec83-4748-8f43-774893380272",
   "triggerCount": 4,
   "shared": [
     {
