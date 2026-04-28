@@ -2112,7 +2112,7 @@
             },
             {
               "name": "lut_file",
-              "value": "/Users/mayoalexander/sites/freelabel/fl-api/storage/app/utils/shutterstock/HardBoost.cube"
+              "value": "/var/www/html/storage/app/utils/shutterstock/HardBoost.cube"
             },
             {
               "name": "lut_percentage",
