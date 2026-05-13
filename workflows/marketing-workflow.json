@@ -2422,7 +2422,7 @@
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "{\"user_id\": 193, \"title\": \"SOM: DJ Outreach\", \"prompt\": \"dj limit=15\", \"type\": \"som\", \"config\": {\"timeout_seconds\": 1800, \"boardId\": \"224\", \"strategy\": \"DJ Outreach | V1\", \"igAccount\": \"thebeatbox__\"}}",
+        "jsonBody": "{\"user_id\": 193, \"title\": \"SOM: DJ Outreach\", \"prompt\": \"dj limit=15\", \"type\": \"som\", \"config\": {\"timeout_seconds\": 1800, \"boardId\": \"224\", \"strategy\": \"DJ Outreach | V2\", \"igAccount\": \"thebeatbox__\"}}",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
