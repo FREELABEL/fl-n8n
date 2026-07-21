@@ -1,9 +1,9 @@
 {
   "createdAt": "2026-02-20T19:26:47.962Z",
-  "updatedAt": "2026-04-26T14:56:38.485Z",
+  "updatedAt": "2026-06-06T13:26:04.135Z",
   "id": "IeiQIvPwcMMEYjVr",
   "name": "YouTube Upload Analysis FIXED",
-  "active": false,
+  "active": true,
   "isArchived": false,
   "nodes": [
     {
@@ -45,7 +45,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer REDACTED_TOKEN"
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZmIwZDY3OS1hMmJjLTRmMmEtODdlZS02MDk5NzMwMmMxMjQiLCJqdGkiOiJlNDI5NTBjYTNhM2E0NzhjYzBmZTExMzliNjFkYTU2NDVhZTU3YjUyOTFkNjRlNmQyOGJjNjkwNzIyMGE0ZmMzYWU1N2FmZDJiMDQzNDNmMCIsImlhdCI6MTc2MTc3NTYxNi41OTYzNzgsIm5iZiI6MTc2MTc3NTYxNi41OTYzOCwiZXhwIjoxNzkzMzExNjE2LjU4MjM5MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.XifXvOEbBtaFkyMb4mCuMJ6jnFHin5z6Rq38DL53tMuY-JARYOMh6E49l59maxbCM1dpNMBFgXUMdg6cWqcCevmduobTHUvESfWF0mdsDWn78Xio7s1uSijJ0deNzKzv6DAMBh-hTEorCbuzGlXGEgLgVSDmSjFSTpM9TA9cQNE-8yuIVg6bivS6kz9t1xrzyrB76NwsdfIdcwEpgnqV8JlOsCWh6d621-XSZVs9TousY-ou5UpVNCnuQNjZYvIJeFIDynsu26xNsosN3E7hnY6YSCU1ybgNm0aH32vpG0pmDbi5wj-DNCe0zNRgYr96schsAVkD8iSG9Jt4b81qQc-vRPj6NuaqhPbIYwiOEt5PC-qC8i7LWpQ5owgv5B2Xwq0IYUPkVYIQXFQpeVdas_IaATMX48YGpac0MfgVGkV2KHmapftbgYKSyiY5y4NNbJjzvtKLBm_BL9ucPyLunI-wTPWGwGA2Pq2kyJ4u3GhkWaEtaHfXRRW7nGSPU-ZW28o6aE6GsqdwCjV6fsZpgSRjBZyd5fhURLkRWgR7-r5-UxMjQQQXf8lrnyb8uGtfa8gPraZbLFX9Psn51GU8vE7ZJ6Fx-_RS-7ziuGtBf6z9c04sB9lP4HVTeR2cBXRHUhuO1X97XdZ69r585F5rnbKwgzBHwD-AB_NoJYra5Mc"
             }
           ]
         },
@@ -114,7 +114,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "SLACK_WEBHOOK_PLACEHOLDER",
+        "url": "={{ $env.SLACK_WEBHOOK_URL }}",
         "sendBody": true,
         "bodyParameters": {
           "parameters": [
@@ -144,7 +144,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer REDACTED_TOKEN"
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZmIwZDY3OS1hMmJjLTRmMmEtODdlZS02MDk5NzMwMmMxMjQiLCJqdGkiOiJlNDI5NTBjYTNhM2E0NzhjYzBmZTExMzliNjFkYTU2NDVhZTU3YjUyOTFkNjRlNmQyOGJjNjkwNzIyMGE0ZmMzYWU1N2FmZDJiMDQzNDNmMCIsImlhdCI6MTc2MTc3NTYxNi41OTYzNzgsIm5iZiI6MTc2MTc3NTYxNi41OTYzOCwiZXhwIjoxNzkzMzExNjE2LjU4MjM5MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.XifXvOEbBtaFkyMb4mCuMJ6jnFHin5z6Rq38DL53tMuY-JARYOMh6E49l59maxbCM1dpNMBFgXUMdg6cWqcCevmduobTHUvESfWF0mdsDWn78Xio7s1uSijJ0deNzKzv6DAMBh-hTEorCbuzGlXGEgLgVSDmSjFSTpM9TA9cQNE-8yuIVg6bivS6kz9t1xrzyrB76NwsdfIdcwEpgnqV8JlOsCWh6d621-XSZVs9TousY-ou5UpVNCnuQNjZYvIJeFIDynsu26xNsosN3E7hnY6YSCU1ybgNm0aH32vpG0pmDbi5wj-DNCe0zNRgYr96schsAVkD8iSG9Jt4b81qQc-vRPj6NuaqhPbIYwiOEt5PC-qC8i7LWpQ5owgv5B2Xwq0IYUPkVYIQXFQpeVdas_IaATMX48YGpac0MfgVGkV2KHmapftbgYKSyiY5y4NNbJjzvtKLBm_BL9ucPyLunI-wTPWGwGA2Pq2kyJ4u3GhkWaEtaHfXRRW7nGSPU-ZW28o6aE6GsqdwCjV6fsZpgSRjBZyd5fhURLkRWgR7-r5-UxMjQQQXf8lrnyb8uGtfa8gPraZbLFX9Psn51GU8vE7ZJ6Fx-_RS-7ziuGtBf6z9c04sB9lP4HVTeR2cBXRHUhuO1X97XdZ69r585F5rnbKwgzBHwD-AB_NoJYra5Mc"
             }
           ]
         },
@@ -176,7 +176,7 @@
       "id": "8528c87f-8414-4742-9461-5cc778f75ba7",
       "name": "ADD TO BUFFER V2",
       "alwaysOutputData": false,
-      "onError": "continueErrorOutput"
+      "onError": "continueRegularOutput"
     },
     {
       "parameters": {
@@ -187,7 +187,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer REDACTED_TOKEN"
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZmIwZDY3OS1hMmJjLTRmMmEtODdlZS02MDk5NzMwMmMxMjQiLCJqdGkiOiJlNDI5NTBjYTNhM2E0NzhjYzBmZTExMzliNjFkYTU2NDVhZTU3YjUyOTFkNjRlNmQyOGJjNjkwNzIyMGE0ZmMzYWU1N2FmZDJiMDQzNDNmMCIsImlhdCI6MTc2MTc3NTYxNi41OTYzNzgsIm5iZiI6MTc2MTc3NTYxNi41OTYzOCwiZXhwIjoxNzkzMzExNjE2LjU4MjM5MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.XifXvOEbBtaFkyMb4mCuMJ6jnFHin5z6Rq38DL53tMuY-JARYOMh6E49l59maxbCM1dpNMBFgXUMdg6cWqcCevmduobTHUvESfWF0mdsDWn78Xio7s1uSijJ0deNzKzv6DAMBh-hTEorCbuzGlXGEgLgVSDmSjFSTpM9TA9cQNE-8yuIVg6bivS6kz9t1xrzyrB76NwsdfIdcwEpgnqV8JlOsCWh6d621-XSZVs9TousY-ou5UpVNCnuQNjZYvIJeFIDynsu26xNsosN3E7hnY6YSCU1ybgNm0aH32vpG0pmDbi5wj-DNCe0zNRgYr96schsAVkD8iSG9Jt4b81qQc-vRPj6NuaqhPbIYwiOEt5PC-qC8i7LWpQ5owgv5B2Xwq0IYUPkVYIQXFQpeVdas_IaATMX48YGpac0MfgVGkV2KHmapftbgYKSyiY5y4NNbJjzvtKLBm_BL9ucPyLunI-wTPWGwGA2Pq2kyJ4u3GhkWaEtaHfXRRW7nGSPU-ZW28o6aE6GsqdwCjV6fsZpgSRjBZyd5fhURLkRWgR7-r5-UxMjQQQXf8lrnyb8uGtfa8gPraZbLFX9Psn51GU8vE7ZJ6Fx-_RS-7ziuGtBf6z9c04sB9lP4HVTeR2cBXRHUhuO1X97XdZ69r585F5rnbKwgzBHwD-AB_NoJYra5Mc"
             }
           ]
         },
@@ -235,7 +235,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer REDACTED_TOKEN"
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZmIwZDY3OS1hMmJjLTRmMmEtODdlZS02MDk5NzMwMmMxMjQiLCJqdGkiOiJlNDI5NTBjYTNhM2E0NzhjYzBmZTExMzliNjFkYTU2NDVhZTU3YjUyOTFkNjRlNmQyOGJjNjkwNzIyMGE0ZmMzYWU1N2FmZDJiMDQzNDNmMCIsImlhdCI6MTc2MTc3NTYxNi41OTYzNzgsIm5iZiI6MTc2MTc3NTYxNi41OTYzOCwiZXhwIjoxNzkzMzExNjE2LjU4MjM5MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.XifXvOEbBtaFkyMb4mCuMJ6jnFHin5z6Rq38DL53tMuY-JARYOMh6E49l59maxbCM1dpNMBFgXUMdg6cWqcCevmduobTHUvESfWF0mdsDWn78Xio7s1uSijJ0deNzKzv6DAMBh-hTEorCbuzGlXGEgLgVSDmSjFSTpM9TA9cQNE-8yuIVg6bivS6kz9t1xrzyrB76NwsdfIdcwEpgnqV8JlOsCWh6d621-XSZVs9TousY-ou5UpVNCnuQNjZYvIJeFIDynsu26xNsosN3E7hnY6YSCU1ybgNm0aH32vpG0pmDbi5wj-DNCe0zNRgYr96schsAVkD8iSG9Jt4b81qQc-vRPj6NuaqhPbIYwiOEt5PC-qC8i7LWpQ5owgv5B2Xwq0IYUPkVYIQXFQpeVdas_IaATMX48YGpac0MfgVGkV2KHmapftbgYKSyiY5y4NNbJjzvtKLBm_BL9ucPyLunI-wTPWGwGA2Pq2kyJ4u3GhkWaEtaHfXRRW7nGSPU-ZW28o6aE6GsqdwCjV6fsZpgSRjBZyd5fhURLkRWgR7-r5-UxMjQQQXf8lrnyb8uGtfa8gPraZbLFX9Psn51GU8vE7ZJ6Fx-_RS-7ziuGtBf6z9c04sB9lP4HVTeR2cBXRHUhuO1X97XdZ69r585F5rnbKwgzBHwD-AB_NoJYra5Mc"
             }
           ]
         },
@@ -276,7 +276,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer REDACTED_TOKEN"
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZmIwZDY3OS1hMmJjLTRmMmEtODdlZS02MDk5NzMwMmMxMjQiLCJqdGkiOiJlNDI5NTBjYTNhM2E0NzhjYzBmZTExMzliNjFkYTU2NDVhZTU3YjUyOTFkNjRlNmQyOGJjNjkwNzIyMGE0ZmMzYWU1N2FmZDJiMDQzNDNmMCIsImlhdCI6MTc2MTc3NTYxNi41OTYzNzgsIm5iZiI6MTc2MTc3NTYxNi41OTYzOCwiZXhwIjoxNzkzMzExNjE2LjU4MjM5MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.XifXvOEbBtaFkyMb4mCuMJ6jnFHin5z6Rq38DL53tMuY-JARYOMh6E49l59maxbCM1dpNMBFgXUMdg6cWqcCevmduobTHUvESfWF0mdsDWn78Xio7s1uSijJ0deNzKzv6DAMBh-hTEorCbuzGlXGEgLgVSDmSjFSTpM9TA9cQNE-8yuIVg6bivS6kz9t1xrzyrB76NwsdfIdcwEpgnqV8JlOsCWh6d621-XSZVs9TousY-ou5UpVNCnuQNjZYvIJeFIDynsu26xNsosN3E7hnY6YSCU1ybgNm0aH32vpG0pmDbi5wj-DNCe0zNRgYr96schsAVkD8iSG9Jt4b81qQc-vRPj6NuaqhPbIYwiOEt5PC-qC8i7LWpQ5owgv5B2Xwq0IYUPkVYIQXFQpeVdas_IaATMX48YGpac0MfgVGkV2KHmapftbgYKSyiY5y4NNbJjzvtKLBm_BL9ucPyLunI-wTPWGwGA2Pq2kyJ4u3GhkWaEtaHfXRRW7nGSPU-ZW28o6aE6GsqdwCjV6fsZpgSRjBZyd5fhURLkRWgR7-r5-UxMjQQQXf8lrnyb8uGtfa8gPraZbLFX9Psn51GU8vE7ZJ6Fx-_RS-7ziuGtBf6z9c04sB9lP4HVTeR2cBXRHUhuO1X97XdZ69r585F5rnbKwgzBHwD-AB_NoJYra5Mc"
             }
           ]
         },
@@ -333,7 +333,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer REDACTED_TOKEN"
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZmIwZDY3OS1hMmJjLTRmMmEtODdlZS02MDk5NzMwMmMxMjQiLCJqdGkiOiJlNDI5NTBjYTNhM2E0NzhjYzBmZTExMzliNjFkYTU2NDVhZTU3YjUyOTFkNjRlNmQyOGJjNjkwNzIyMGE0ZmMzYWU1N2FmZDJiMDQzNDNmMCIsImlhdCI6MTc2MTc3NTYxNi41OTYzNzgsIm5iZiI6MTc2MTc3NTYxNi41OTYzOCwiZXhwIjoxNzkzMzExNjE2LjU4MjM5MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.XifXvOEbBtaFkyMb4mCuMJ6jnFHin5z6Rq38DL53tMuY-JARYOMh6E49l59maxbCM1dpNMBFgXUMdg6cWqcCevmduobTHUvESfWF0mdsDWn78Xio7s1uSijJ0deNzKzv6DAMBh-hTEorCbuzGlXGEgLgVSDmSjFSTpM9TA9cQNE-8yuIVg6bivS6kz9t1xrzyrB76NwsdfIdcwEpgnqV8JlOsCWh6d621-XSZVs9TousY-ou5UpVNCnuQNjZYvIJeFIDynsu26xNsosN3E7hnY6YSCU1ybgNm0aH32vpG0pmDbi5wj-DNCe0zNRgYr96schsAVkD8iSG9Jt4b81qQc-vRPj6NuaqhPbIYwiOEt5PC-qC8i7LWpQ5owgv5B2Xwq0IYUPkVYIQXFQpeVdas_IaATMX48YGpac0MfgVGkV2KHmapftbgYKSyiY5y4NNbJjzvtKLBm_BL9ucPyLunI-wTPWGwGA2Pq2kyJ4u3GhkWaEtaHfXRRW7nGSPU-ZW28o6aE6GsqdwCjV6fsZpgSRjBZyd5fhURLkRWgR7-r5-UxMjQQQXf8lrnyb8uGtfa8gPraZbLFX9Psn51GU8vE7ZJ6Fx-_RS-7ziuGtBf6z9c04sB9lP4HVTeR2cBXRHUhuO1X97XdZ69r585F5rnbKwgzBHwD-AB_NoJYra5Mc"
             }
           ]
         },
@@ -365,7 +365,7 @@
       "id": "680a255f-0adc-47a8-acb7-080c7bc63b4c",
       "name": "Shuffle Buffer Queue",
       "disabled": true,
-      "onError": "continueErrorOutput"
+      "onError": "continueRegularOutput"
     },
     {
       "parameters": {
@@ -390,7 +390,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer REDACTED_TOKEN"
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZmIwZDY3OS1hMmJjLTRmMmEtODdlZS02MDk5NzMwMmMxMjQiLCJqdGkiOiJlNDI5NTBjYTNhM2E0NzhjYzBmZTExMzliNjFkYTU2NDVhZTU3YjUyOTFkNjRlNmQyOGJjNjkwNzIyMGE0ZmMzYWU1N2FmZDJiMDQzNDNmMCIsImlhdCI6MTc2MTc3NTYxNi41OTYzNzgsIm5iZiI6MTc2MTc3NTYxNi41OTYzOCwiZXhwIjoxNzkzMzExNjE2LjU4MjM5MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.XifXvOEbBtaFkyMb4mCuMJ6jnFHin5z6Rq38DL53tMuY-JARYOMh6E49l59maxbCM1dpNMBFgXUMdg6cWqcCevmduobTHUvESfWF0mdsDWn78Xio7s1uSijJ0deNzKzv6DAMBh-hTEorCbuzGlXGEgLgVSDmSjFSTpM9TA9cQNE-8yuIVg6bivS6kz9t1xrzyrB76NwsdfIdcwEpgnqV8JlOsCWh6d621-XSZVs9TousY-ou5UpVNCnuQNjZYvIJeFIDynsu26xNsosN3E7hnY6YSCU1ybgNm0aH32vpG0pmDbi5wj-DNCe0zNRgYr96schsAVkD8iSG9Jt4b81qQc-vRPj6NuaqhPbIYwiOEt5PC-qC8i7LWpQ5owgv5B2Xwq0IYUPkVYIQXFQpeVdas_IaATMX48YGpac0MfgVGkV2KHmapftbgYKSyiY5y4NNbJjzvtKLBm_BL9ucPyLunI-wTPWGwGA2Pq2kyJ4u3GhkWaEtaHfXRRW7nGSPU-ZW28o6aE6GsqdwCjV6fsZpgSRjBZyd5fhURLkRWgR7-r5-UxMjQQQXf8lrnyb8uGtfa8gPraZbLFX9Psn51GU8vE7ZJ6Fx-_RS-7ziuGtBf6z9c04sB9lP4HVTeR2cBXRHUhuO1X97XdZ69r585F5rnbKwgzBHwD-AB_NoJYra5Mc"
             }
           ]
         },
@@ -480,7 +480,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "SLACK_WEBHOOK_PLACEHOLDER",
+        "url": "={{ $env.SLACK_WEBHOOK_URL }}",
         "sendBody": true,
         "bodyParameters": {
           "parameters": [
@@ -504,7 +504,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "DISCORD_WEBHOOK_PLACEHOLDER",
+        "url": "https://discord.com/api/webhooks/1354095329623933010/tOP-swsOALRBWIogKZ7Z_yKHM3E0ROUKbH1t99qxegbDALVXW4ar5VIke9QX2ngay119",
         "sendBody": true,
         "specifyBody": "json",
         "jsonBody": "={{ JSON.stringify({ username: 'Discover Daily', embeds: [{ title: (function() { try { return $('PUBLISH TO FL').item.json.content?.title || 'New content published'; } catch(e) { return $json.content?.title || 'New content published'; } })(), url: (function() { try { return 'https://freelabel.net/content/video/' + ($('PUBLISH TO FL').item.json.content.id || ''); } catch(e) { return 'https://freelabel.net'; } })(), description: (function() { try { var d = $('FETCH YT DATA').item.json.data.video.description || ''; return d.substring(0, 200) + (d.length > 200 ? '...' : ''); } catch(e) { return ''; } })(), color: 16729156, image: { url: (function() { try { return $('FETCH YT DATA').item.json.data.video.thumbnails.maxres.url || ''; } catch(e) { return ''; } })() }, fields: [{ name: '\ud83c\udfac Watch', value: '[Open on FreeLabel](' + (function() { try { return 'https://freelabel.net/content/video/' + $('PUBLISH TO FL').item.json.content.id; } catch(e) { return 'https://freelabel.net'; } })() + ')', inline: true }, { name: '\ud83d\udcfa YouTube', value: '[Original Video](https://youtube.com/watch?v=' + (function() { try { return $('Extract JSON').item.json.media_id || ''; } catch(e) { return ''; } })() + ')', inline: true }], footer: { text: 'Discover Daily | FreeLabel' }, timestamp: new Date().toISOString() }] }) }}",
@@ -517,12 +517,13 @@
         -128
       ],
       "id": "ebff038b-d23c-461c-bae3-a7839b0b9ed6",
-      "name": "Send to Marketing Team1"
+      "name": "Send to Marketing Team1",
+      "onError": "continueRegularOutput"
     },
     {
       "parameters": {
         "method": "POST",
-        "url": "SLACK_WEBHOOK_PLACEHOLDER",
+        "url": "={{ $env.SLACK_WEBHOOK_URL }}",
         "sendBody": true,
         "bodyParameters": {
           "parameters": [
@@ -541,7 +542,8 @@
         1712
       ],
       "id": "ac567ab2-052d-406d-9f86-bd8c72d4792a",
-      "name": "Send to Marketing Team2"
+      "name": "Send to Marketing Team2",
+      "onError": "continueRegularOutput"
     },
     {
       "parameters": {
@@ -551,7 +553,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer REDACTED_TOKEN"
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZmIwZDY3OS1hMmJjLTRmMmEtODdlZS02MDk5NzMwMmMxMjQiLCJqdGkiOiJlNDI5NTBjYTNhM2E0NzhjYzBmZTExMzliNjFkYTU2NDVhZTU3YjUyOTFkNjRlNmQyOGJjNjkwNzIyMGE0ZmMzYWU1N2FmZDJiMDQzNDNmMCIsImlhdCI6MTc2MTc3NTYxNi41OTYzNzgsIm5iZiI6MTc2MTc3NTYxNi41OTYzOCwiZXhwIjoxNzkzMzExNjE2LjU4MjM5MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.XifXvOEbBtaFkyMb4mCuMJ6jnFHin5z6Rq38DL53tMuY-JARYOMh6E49l59maxbCM1dpNMBFgXUMdg6cWqcCevmduobTHUvESfWF0mdsDWn78Xio7s1uSijJ0deNzKzv6DAMBh-hTEorCbuzGlXGEgLgVSDmSjFSTpM9TA9cQNE-8yuIVg6bivS6kz9t1xrzyrB76NwsdfIdcwEpgnqV8JlOsCWh6d621-XSZVs9TousY-ou5UpVNCnuQNjZYvIJeFIDynsu26xNsosN3E7hnY6YSCU1ybgNm0aH32vpG0pmDbi5wj-DNCe0zNRgYr96schsAVkD8iSG9Jt4b81qQc-vRPj6NuaqhPbIYwiOEt5PC-qC8i7LWpQ5owgv5B2Xwq0IYUPkVYIQXFQpeVdas_IaATMX48YGpac0MfgVGkV2KHmapftbgYKSyiY5y4NNbJjzvtKLBm_BL9ucPyLunI-wTPWGwGA2Pq2kyJ4u3GhkWaEtaHfXRRW7nGSPU-ZW28o6aE6GsqdwCjV6fsZpgSRjBZyd5fhURLkRWgR7-r5-UxMjQQQXf8lrnyb8uGtfa8gPraZbLFX9Psn51GU8vE7ZJ6Fx-_RS-7ziuGtBf6z9c04sB9lP4HVTeR2cBXRHUhuO1X97XdZ69r585F5rnbKwgzBHwD-AB_NoJYra5Mc"
             }
           ]
         },
@@ -583,7 +585,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "SLACK_WEBHOOK_PLACEHOLDER",
+        "url": "={{ $env.SLACK_WEBHOOK_URL }}",
         "sendBody": true,
         "bodyParameters": {
           "parameters": [
@@ -602,7 +604,8 @@
         992
       ],
       "id": "8607222b-1ab5-4d5f-af52-a1ed38170245",
-      "name": "Send to Marketing Team3"
+      "name": "Send to Marketing Team3",
+      "onError": "continueRegularOutput"
     },
     {
       "parameters": {
@@ -638,7 +641,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "SLACK_WEBHOOK_PLACEHOLDER",
+        "url": "={{ $env.SLACK_WEBHOOK_URL }}",
         "sendBody": true,
         "bodyParameters": {
           "parameters": [
@@ -667,7 +670,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer REDACTED_TOKEN"
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZmIwZDY3OS1hMmJjLTRmMmEtODdlZS02MDk5NzMwMmMxMjQiLCJqdGkiOiJlNDI5NTBjYTNhM2E0NzhjYzBmZTExMzliNjFkYTU2NDVhZTU3YjUyOTFkNjRlNmQyOGJjNjkwNzIyMGE0ZmMzYWU1N2FmZDJiMDQzNDNmMCIsImlhdCI6MTc2MTc3NTYxNi41OTYzNzgsIm5iZiI6MTc2MTc3NTYxNi41OTYzOCwiZXhwIjoxNzkzMzExNjE2LjU4MjM5MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.XifXvOEbBtaFkyMb4mCuMJ6jnFHin5z6Rq38DL53tMuY-JARYOMh6E49l59maxbCM1dpNMBFgXUMdg6cWqcCevmduobTHUvESfWF0mdsDWn78Xio7s1uSijJ0deNzKzv6DAMBh-hTEorCbuzGlXGEgLgVSDmSjFSTpM9TA9cQNE-8yuIVg6bivS6kz9t1xrzyrB76NwsdfIdcwEpgnqV8JlOsCWh6d621-XSZVs9TousY-ou5UpVNCnuQNjZYvIJeFIDynsu26xNsosN3E7hnY6YSCU1ybgNm0aH32vpG0pmDbi5wj-DNCe0zNRgYr96schsAVkD8iSG9Jt4b81qQc-vRPj6NuaqhPbIYwiOEt5PC-qC8i7LWpQ5owgv5B2Xwq0IYUPkVYIQXFQpeVdas_IaATMX48YGpac0MfgVGkV2KHmapftbgYKSyiY5y4NNbJjzvtKLBm_BL9ucPyLunI-wTPWGwGA2Pq2kyJ4u3GhkWaEtaHfXRRW7nGSPU-ZW28o6aE6GsqdwCjV6fsZpgSRjBZyd5fhURLkRWgR7-r5-UxMjQQQXf8lrnyb8uGtfa8gPraZbLFX9Psn51GU8vE7ZJ6Fx-_RS-7ziuGtBf6z9c04sB9lP4HVTeR2cBXRHUhuO1X97XdZ69r585F5rnbKwgzBHwD-AB_NoJYra5Mc"
             }
           ]
         },
@@ -824,7 +827,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "SLACK_WEBHOOK_PLACEHOLDER",
+        "url": "={{ $env.SLACK_WEBHOOK_URL }}",
         "sendBody": true,
         "bodyParameters": {
           "parameters": [
@@ -844,7 +847,8 @@
       ],
       "id": "dd989fd3-60b4-4fa6-9083-1f19d9c48599",
       "name": "Send to Marketing Team",
-      "disabled": true
+      "disabled": true,
+      "onError": "continueRegularOutput"
     },
     {
       "parameters": {
@@ -876,7 +880,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer REDACTED_TOKEN"
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZmIwZDY3OS1hMmJjLTRmMmEtODdlZS02MDk5NzMwMmMxMjQiLCJqdGkiOiJlNDI5NTBjYTNhM2E0NzhjYzBmZTExMzliNjFkYTU2NDVhZTU3YjUyOTFkNjRlNmQyOGJjNjkwNzIyMGE0ZmMzYWU1N2FmZDJiMDQzNDNmMCIsImlhdCI6MTc2MTc3NTYxNi41OTYzNzgsIm5iZiI6MTc2MTc3NTYxNi41OTYzOCwiZXhwIjoxNzkzMzExNjE2LjU4MjM5MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.XifXvOEbBtaFkyMb4mCuMJ6jnFHin5z6Rq38DL53tMuY-JARYOMh6E49l59maxbCM1dpNMBFgXUMdg6cWqcCevmduobTHUvESfWF0mdsDWn78Xio7s1uSijJ0deNzKzv6DAMBh-hTEorCbuzGlXGEgLgVSDmSjFSTpM9TA9cQNE-8yuIVg6bivS6kz9t1xrzyrB76NwsdfIdcwEpgnqV8JlOsCWh6d621-XSZVs9TousY-ou5UpVNCnuQNjZYvIJeFIDynsu26xNsosN3E7hnY6YSCU1ybgNm0aH32vpG0pmDbi5wj-DNCe0zNRgYr96schsAVkD8iSG9Jt4b81qQc-vRPj6NuaqhPbIYwiOEt5PC-qC8i7LWpQ5owgv5B2Xwq0IYUPkVYIQXFQpeVdas_IaATMX48YGpac0MfgVGkV2KHmapftbgYKSyiY5y4NNbJjzvtKLBm_BL9ucPyLunI-wTPWGwGA2Pq2kyJ4u3GhkWaEtaHfXRRW7nGSPU-ZW28o6aE6GsqdwCjV6fsZpgSRjBZyd5fhURLkRWgR7-r5-UxMjQQQXf8lrnyb8uGtfa8gPraZbLFX9Psn51GU8vE7ZJ6Fx-_RS-7ziuGtBf6z9c04sB9lP4HVTeR2cBXRHUhuO1X97XdZ69r585F5rnbKwgzBHwD-AB_NoJYra5Mc"
             }
           ]
         },
@@ -938,7 +942,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer REDACTED_TOKEN"
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZmIwZDY3OS1hMmJjLTRmMmEtODdlZS02MDk5NzMwMmMxMjQiLCJqdGkiOiJlNDI5NTBjYTNhM2E0NzhjYzBmZTExMzliNjFkYTU2NDVhZTU3YjUyOTFkNjRlNmQyOGJjNjkwNzIyMGE0ZmMzYWU1N2FmZDJiMDQzNDNmMCIsImlhdCI6MTc2MTc3NTYxNi41OTYzNzgsIm5iZiI6MTc2MTc3NTYxNi41OTYzOCwiZXhwIjoxNzkzMzExNjE2LjU4MjM5MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.XifXvOEbBtaFkyMb4mCuMJ6jnFHin5z6Rq38DL53tMuY-JARYOMh6E49l59maxbCM1dpNMBFgXUMdg6cWqcCevmduobTHUvESfWF0mdsDWn78Xio7s1uSijJ0deNzKzv6DAMBh-hTEorCbuzGlXGEgLgVSDmSjFSTpM9TA9cQNE-8yuIVg6bivS6kz9t1xrzyrB76NwsdfIdcwEpgnqV8JlOsCWh6d621-XSZVs9TousY-ou5UpVNCnuQNjZYvIJeFIDynsu26xNsosN3E7hnY6YSCU1ybgNm0aH32vpG0pmDbi5wj-DNCe0zNRgYr96schsAVkD8iSG9Jt4b81qQc-vRPj6NuaqhPbIYwiOEt5PC-qC8i7LWpQ5owgv5B2Xwq0IYUPkVYIQXFQpeVdas_IaATMX48YGpac0MfgVGkV2KHmapftbgYKSyiY5y4NNbJjzvtKLBm_BL9ucPyLunI-wTPWGwGA2Pq2kyJ4u3GhkWaEtaHfXRRW7nGSPU-ZW28o6aE6GsqdwCjV6fsZpgSRjBZyd5fhURLkRWgR7-r5-UxMjQQQXf8lrnyb8uGtfa8gPraZbLFX9Psn51GU8vE7ZJ6Fx-_RS-7ziuGtBf6z9c04sB9lP4HVTeR2cBXRHUhuO1X97XdZ69r585F5rnbKwgzBHwD-AB_NoJYra5Mc"
             }
           ]
         },
@@ -1035,7 +1039,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "SLACK_WEBHOOK_PLACEHOLDER",
+        "url": "={{ $env.SLACK_WEBHOOK_URL }}",
         "sendBody": true,
         "bodyParameters": {
           "parameters": [
@@ -1059,7 +1063,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "SLACK_WEBHOOK_PLACEHOLDER",
+        "url": "={{ $env.SLACK_WEBHOOK_URL }}",
         "sendBody": true,
         "bodyParameters": {
           "parameters": [
@@ -1167,7 +1171,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "SLACK_WEBHOOK_PLACEHOLDER",
+        "url": "={{ $env.SLACK_WEBHOOK_URL }}",
         "sendBody": true,
         "bodyParameters": {
           "parameters": [
@@ -1263,7 +1267,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "SLACK_WEBHOOK_PLACEHOLDER",
+        "url": "={{ $env.SLACK_WEBHOOK_URL }}",
         "sendBody": true,
         "bodyParameters": {
           "parameters": [
@@ -1316,7 +1320,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "SLACK_WEBHOOK_PLACEHOLDER",
+        "url": "={{ $env.SLACK_WEBHOOK_URL }}",
         "sendBody": true,
         "bodyParameters": {
           "parameters": [
@@ -1440,7 +1444,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer REDACTED_TOKEN"
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZmIwZDY3OS1hMmJjLTRmMmEtODdlZS02MDk5NzMwMmMxMjQiLCJqdGkiOiJlNDI5NTBjYTNhM2E0NzhjYzBmZTExMzliNjFkYTU2NDVhZTU3YjUyOTFkNjRlNmQyOGJjNjkwNzIyMGE0ZmMzYWU1N2FmZDJiMDQzNDNmMCIsImlhdCI6MTc2MTc3NTYxNi41OTYzNzgsIm5iZiI6MTc2MTc3NTYxNi41OTYzOCwiZXhwIjoxNzkzMzExNjE2LjU4MjM5MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.XifXvOEbBtaFkyMb4mCuMJ6jnFHin5z6Rq38DL53tMuY-JARYOMh6E49l59maxbCM1dpNMBFgXUMdg6cWqcCevmduobTHUvESfWF0mdsDWn78Xio7s1uSijJ0deNzKzv6DAMBh-hTEorCbuzGlXGEgLgVSDmSjFSTpM9TA9cQNE-8yuIVg6bivS6kz9t1xrzyrB76NwsdfIdcwEpgnqV8JlOsCWh6d621-XSZVs9TousY-ou5UpVNCnuQNjZYvIJeFIDynsu26xNsosN3E7hnY6YSCU1ybgNm0aH32vpG0pmDbi5wj-DNCe0zNRgYr96schsAVkD8iSG9Jt4b81qQc-vRPj6NuaqhPbIYwiOEt5PC-qC8i7LWpQ5owgv5B2Xwq0IYUPkVYIQXFQpeVdas_IaATMX48YGpac0MfgVGkV2KHmapftbgYKSyiY5y4NNbJjzvtKLBm_BL9ucPyLunI-wTPWGwGA2Pq2kyJ4u3GhkWaEtaHfXRRW7nGSPU-ZW28o6aE6GsqdwCjV6fsZpgSRjBZyd5fhURLkRWgR7-r5-UxMjQQQXf8lrnyb8uGtfa8gPraZbLFX9Psn51GU8vE7ZJ6Fx-_RS-7ziuGtBf6z9c04sB9lP4HVTeR2cBXRHUhuO1X97XdZ69r585F5rnbKwgzBHwD-AB_NoJYra5Mc"
             }
           ]
         },
@@ -1483,7 +1487,7 @@
       "name": "OpenAI Chat Model6",
       "credentials": {
         "openAiApi": {
-          "id": "cRP5y4M5fJMNOnkr",
+          "id": "bQDz6qPK5FCOsbos",
           "name": "OpenAi account"
         }
       }
@@ -1517,7 +1521,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "SLACK_WEBHOOK_PLACEHOLDER",
+        "url": "={{ $env.SLACK_WEBHOOK_URL }}",
         "sendBody": true,
         "bodyParameters": {
           "parameters": [
@@ -1537,7 +1541,8 @@
       ],
       "id": "fd19317c-a5f8-4f3e-8a0a-dd489c63169c",
       "name": "Send to Marketing Team4",
-      "disabled": true
+      "disabled": true,
+      "onError": "continueRegularOutput"
     },
     {
       "parameters": {
@@ -1618,7 +1623,7 @@
       "name": "OpenAI Chat Model2",
       "credentials": {
         "openAiApi": {
-          "id": "cRP5y4M5fJMNOnkr",
+          "id": "bQDz6qPK5FCOsbos",
           "name": "OpenAi account"
         }
       }
@@ -1665,7 +1670,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer REDACTED_TOKEN"
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZmIwZDY3OS1hMmJjLTRmMmEtODdlZS02MDk5NzMwMmMxMjQiLCJqdGkiOiJlNDI5NTBjYTNhM2E0NzhjYzBmZTExMzliNjFkYTU2NDVhZTU3YjUyOTFkNjRlNmQyOGJjNjkwNzIyMGE0ZmMzYWU1N2FmZDJiMDQzNDNmMCIsImlhdCI6MTc2MTc3NTYxNi41OTYzNzgsIm5iZiI6MTc2MTc3NTYxNi41OTYzOCwiZXhwIjoxNzkzMzExNjE2LjU4MjM5MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.XifXvOEbBtaFkyMb4mCuMJ6jnFHin5z6Rq38DL53tMuY-JARYOMh6E49l59maxbCM1dpNMBFgXUMdg6cWqcCevmduobTHUvESfWF0mdsDWn78Xio7s1uSijJ0deNzKzv6DAMBh-hTEorCbuzGlXGEgLgVSDmSjFSTpM9TA9cQNE-8yuIVg6bivS6kz9t1xrzyrB76NwsdfIdcwEpgnqV8JlOsCWh6d621-XSZVs9TousY-ou5UpVNCnuQNjZYvIJeFIDynsu26xNsosN3E7hnY6YSCU1ybgNm0aH32vpG0pmDbi5wj-DNCe0zNRgYr96schsAVkD8iSG9Jt4b81qQc-vRPj6NuaqhPbIYwiOEt5PC-qC8i7LWpQ5owgv5B2Xwq0IYUPkVYIQXFQpeVdas_IaATMX48YGpac0MfgVGkV2KHmapftbgYKSyiY5y4NNbJjzvtKLBm_BL9ucPyLunI-wTPWGwGA2Pq2kyJ4u3GhkWaEtaHfXRRW7nGSPU-ZW28o6aE6GsqdwCjV6fsZpgSRjBZyd5fhURLkRWgR7-r5-UxMjQQQXf8lrnyb8uGtfa8gPraZbLFX9Psn51GU8vE7ZJ6Fx-_RS-7ziuGtBf6z9c04sB9lP4HVTeR2cBXRHUhuO1X97XdZ69r585F5rnbKwgzBHwD-AB_NoJYra5Mc"
             }
           ]
         },
@@ -1698,7 +1703,7 @@
       "name": "SEND DISC. DAILY NEWSLETTER",
       "credentials": {
         "httpBearerAuth": {
-          "id": "6arESixjwEtFKczc",
+          "id": "oMjfgfhGJGfMHuDC",
           "name": "Bearer Auth account"
         }
       },
@@ -1803,7 +1808,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer REDACTED_TOKEN"
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZmIwZDY3OS1hMmJjLTRmMmEtODdlZS02MDk5NzMwMmMxMjQiLCJqdGkiOiJlNDI5NTBjYTNhM2E0NzhjYzBmZTExMzliNjFkYTU2NDVhZTU3YjUyOTFkNjRlNmQyOGJjNjkwNzIyMGE0ZmMzYWU1N2FmZDJiMDQzNDNmMCIsImlhdCI6MTc2MTc3NTYxNi41OTYzNzgsIm5iZiI6MTc2MTc3NTYxNi41OTYzOCwiZXhwIjoxNzkzMzExNjE2LjU4MjM5MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.XifXvOEbBtaFkyMb4mCuMJ6jnFHin5z6Rq38DL53tMuY-JARYOMh6E49l59maxbCM1dpNMBFgXUMdg6cWqcCevmduobTHUvESfWF0mdsDWn78Xio7s1uSijJ0deNzKzv6DAMBh-hTEorCbuzGlXGEgLgVSDmSjFSTpM9TA9cQNE-8yuIVg6bivS6kz9t1xrzyrB76NwsdfIdcwEpgnqV8JlOsCWh6d621-XSZVs9TousY-ou5UpVNCnuQNjZYvIJeFIDynsu26xNsosN3E7hnY6YSCU1ybgNm0aH32vpG0pmDbi5wj-DNCe0zNRgYr96schsAVkD8iSG9Jt4b81qQc-vRPj6NuaqhPbIYwiOEt5PC-qC8i7LWpQ5owgv5B2Xwq0IYUPkVYIQXFQpeVdas_IaATMX48YGpac0MfgVGkV2KHmapftbgYKSyiY5y4NNbJjzvtKLBm_BL9ucPyLunI-wTPWGwGA2Pq2kyJ4u3GhkWaEtaHfXRRW7nGSPU-ZW28o6aE6GsqdwCjV6fsZpgSRjBZyd5fhURLkRWgR7-r5-UxMjQQQXf8lrnyb8uGtfa8gPraZbLFX9Psn51GU8vE7ZJ6Fx-_RS-7ziuGtBf6z9c04sB9lP4HVTeR2cBXRHUhuO1X97XdZ69r585F5rnbKwgzBHwD-AB_NoJYra5Mc"
             }
           ]
         },
@@ -1832,7 +1837,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer REDACTED_TOKEN"
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZmIwZDY3OS1hMmJjLTRmMmEtODdlZS02MDk5NzMwMmMxMjQiLCJqdGkiOiJlNDI5NTBjYTNhM2E0NzhjYzBmZTExMzliNjFkYTU2NDVhZTU3YjUyOTFkNjRlNmQyOGJjNjkwNzIyMGE0ZmMzYWU1N2FmZDJiMDQzNDNmMCIsImlhdCI6MTc2MTc3NTYxNi41OTYzNzgsIm5iZiI6MTc2MTc3NTYxNi41OTYzOCwiZXhwIjoxNzkzMzExNjE2LjU4MjM5MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.XifXvOEbBtaFkyMb4mCuMJ6jnFHin5z6Rq38DL53tMuY-JARYOMh6E49l59maxbCM1dpNMBFgXUMdg6cWqcCevmduobTHUvESfWF0mdsDWn78Xio7s1uSijJ0deNzKzv6DAMBh-hTEorCbuzGlXGEgLgVSDmSjFSTpM9TA9cQNE-8yuIVg6bivS6kz9t1xrzyrB76NwsdfIdcwEpgnqV8JlOsCWh6d621-XSZVs9TousY-ou5UpVNCnuQNjZYvIJeFIDynsu26xNsosN3E7hnY6YSCU1ybgNm0aH32vpG0pmDbi5wj-DNCe0zNRgYr96schsAVkD8iSG9Jt4b81qQc-vRPj6NuaqhPbIYwiOEt5PC-qC8i7LWpQ5owgv5B2Xwq0IYUPkVYIQXFQpeVdas_IaATMX48YGpac0MfgVGkV2KHmapftbgYKSyiY5y4NNbJjzvtKLBm_BL9ucPyLunI-wTPWGwGA2Pq2kyJ4u3GhkWaEtaHfXRRW7nGSPU-ZW28o6aE6GsqdwCjV6fsZpgSRjBZyd5fhURLkRWgR7-r5-UxMjQQQXf8lrnyb8uGtfa8gPraZbLFX9Psn51GU8vE7ZJ6Fx-_RS-7ziuGtBf6z9c04sB9lP4HVTeR2cBXRHUhuO1X97XdZ69r585F5rnbKwgzBHwD-AB_NoJYra5Mc"
             },
             {
               "name": "Content-Type",
@@ -1905,7 +1910,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "SLACK_WEBHOOK_PLACEHOLDER",
+        "url": "={{ $env.SLACK_WEBHOOK_URL }}",
         "sendBody": true,
         "bodyParameters": {
           "parameters": [
@@ -2079,7 +2084,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer REDACTED_TOKEN"
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZmIwZDY3OS1hMmJjLTRmMmEtODdlZS02MDk5NzMwMmMxMjQiLCJqdGkiOiJlNDI5NTBjYTNhM2E0NzhjYzBmZTExMzliNjFkYTU2NDVhZTU3YjUyOTFkNjRlNmQyOGJjNjkwNzIyMGE0ZmMzYWU1N2FmZDJiMDQzNDNmMCIsImlhdCI6MTc2MTc3NTYxNi41OTYzNzgsIm5iZiI6MTc2MTc3NTYxNi41OTYzOCwiZXhwIjoxNzkzMzExNjE2LjU4MjM5MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.XifXvOEbBtaFkyMb4mCuMJ6jnFHin5z6Rq38DL53tMuY-JARYOMh6E49l59maxbCM1dpNMBFgXUMdg6cWqcCevmduobTHUvESfWF0mdsDWn78Xio7s1uSijJ0deNzKzv6DAMBh-hTEorCbuzGlXGEgLgVSDmSjFSTpM9TA9cQNE-8yuIVg6bivS6kz9t1xrzyrB76NwsdfIdcwEpgnqV8JlOsCWh6d621-XSZVs9TousY-ou5UpVNCnuQNjZYvIJeFIDynsu26xNsosN3E7hnY6YSCU1ybgNm0aH32vpG0pmDbi5wj-DNCe0zNRgYr96schsAVkD8iSG9Jt4b81qQc-vRPj6NuaqhPbIYwiOEt5PC-qC8i7LWpQ5owgv5B2Xwq0IYUPkVYIQXFQpeVdas_IaATMX48YGpac0MfgVGkV2KHmapftbgYKSyiY5y4NNbJjzvtKLBm_BL9ucPyLunI-wTPWGwGA2Pq2kyJ4u3GhkWaEtaHfXRRW7nGSPU-ZW28o6aE6GsqdwCjV6fsZpgSRjBZyd5fhURLkRWgR7-r5-UxMjQQQXf8lrnyb8uGtfa8gPraZbLFX9Psn51GU8vE7ZJ6Fx-_RS-7ziuGtBf6z9c04sB9lP4HVTeR2cBXRHUhuO1X97XdZ69r585F5rnbKwgzBHwD-AB_NoJYra5Mc"
             }
           ]
         },
@@ -2166,6 +2171,7 @@
       ],
       "id": "9c53648e-43b8-4f8b-b930-985121af0b13",
       "name": "START CREATE CLIP",
+      "disabled": true,
       "retryOnFail": true,
       "maxTries": 2,
       "waitBetweenTries": 3000,
@@ -2260,7 +2266,7 @@
       "name": "xAI Grok Chat Model",
       "credentials": {
         "xAiApi": {
-          "id": "8m7C3TAzlnElOd9s",
+          "id": "7cNwFTgSaN6hD3jl",
           "name": "xAi account"
         }
       }
@@ -2280,7 +2286,7 @@
       "name": "xAI Grok Chat Model1",
       "credentials": {
         "xAiApi": {
-          "id": "8m7C3TAzlnElOd9s",
+          "id": "7cNwFTgSaN6hD3jl",
           "name": "xAi account"
         }
       }
@@ -2302,7 +2308,7 @@
       "name": "xAI Grok Chat Model2",
       "credentials": {
         "xAiApi": {
-          "id": "8m7C3TAzlnElOd9s",
+          "id": "7cNwFTgSaN6hD3jl",
           "name": "xAi account"
         }
       }
@@ -2322,7 +2328,7 @@
       "name": "xAI Grok Chat Model3",
       "credentials": {
         "xAiApi": {
-          "id": "8m7C3TAzlnElOd9s",
+          "id": "7cNwFTgSaN6hD3jl",
           "name": "xAi account"
         }
       }
@@ -2342,7 +2348,7 @@
       "name": "xAI Grok Chat Model4",
       "credentials": {
         "xAiApi": {
-          "id": "8m7C3TAzlnElOd9s",
+          "id": "7cNwFTgSaN6hD3jl",
           "name": "xAi account"
         }
       }
@@ -2356,7 +2362,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer REDACTED_TOKEN"
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZmIwZDY3OS1hMmJjLTRmMmEtODdlZS02MDk5NzMwMmMxMjQiLCJqdGkiOiJlNDI5NTBjYTNhM2E0NzhjYzBmZTExMzliNjFkYTU2NDVhZTU3YjUyOTFkNjRlNmQyOGJjNjkwNzIyMGE0ZmMzYWU1N2FmZDJiMDQzNDNmMCIsImlhdCI6MTc2MTc3NTYxNi41OTYzNzgsIm5iZiI6MTc2MTc3NTYxNi41OTYzOCwiZXhwIjoxNzkzMzExNjE2LjU4MjM5MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.XifXvOEbBtaFkyMb4mCuMJ6jnFHin5z6Rq38DL53tMuY-JARYOMh6E49l59maxbCM1dpNMBFgXUMdg6cWqcCevmduobTHUvESfWF0mdsDWn78Xio7s1uSijJ0deNzKzv6DAMBh-hTEorCbuzGlXGEgLgVSDmSjFSTpM9TA9cQNE-8yuIVg6bivS6kz9t1xrzyrB76NwsdfIdcwEpgnqV8JlOsCWh6d621-XSZVs9TousY-ou5UpVNCnuQNjZYvIJeFIDynsu26xNsosN3E7hnY6YSCU1ybgNm0aH32vpG0pmDbi5wj-DNCe0zNRgYr96schsAVkD8iSG9Jt4b81qQc-vRPj6NuaqhPbIYwiOEt5PC-qC8i7LWpQ5owgv5B2Xwq0IYUPkVYIQXFQpeVdas_IaATMX48YGpac0MfgVGkV2KHmapftbgYKSyiY5y4NNbJjzvtKLBm_BL9ucPyLunI-wTPWGwGA2Pq2kyJ4u3GhkWaEtaHfXRRW7nGSPU-ZW28o6aE6GsqdwCjV6fsZpgSRjBZyd5fhURLkRWgR7-r5-UxMjQQQXf8lrnyb8uGtfa8gPraZbLFX9Psn51GU8vE7ZJ6Fx-_RS-7ziuGtBf6z9c04sB9lP4HVTeR2cBXRHUhuO1X97XdZ69r585F5rnbKwgzBHwD-AB_NoJYra5Mc"
             }
           ]
         },
@@ -2386,7 +2392,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer REDACTED_TOKEN"
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZmIwZDY3OS1hMmJjLTRmMmEtODdlZS02MDk5NzMwMmMxMjQiLCJqdGkiOiJlNDI5NTBjYTNhM2E0NzhjYzBmZTExMzliNjFkYTU2NDVhZTU3YjUyOTFkNjRlNmQyOGJjNjkwNzIyMGE0ZmMzYWU1N2FmZDJiMDQzNDNmMCIsImlhdCI6MTc2MTc3NTYxNi41OTYzNzgsIm5iZiI6MTc2MTc3NTYxNi41OTYzOCwiZXhwIjoxNzkzMzExNjE2LjU4MjM5MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.XifXvOEbBtaFkyMb4mCuMJ6jnFHin5z6Rq38DL53tMuY-JARYOMh6E49l59maxbCM1dpNMBFgXUMdg6cWqcCevmduobTHUvESfWF0mdsDWn78Xio7s1uSijJ0deNzKzv6DAMBh-hTEorCbuzGlXGEgLgVSDmSjFSTpM9TA9cQNE-8yuIVg6bivS6kz9t1xrzyrB76NwsdfIdcwEpgnqV8JlOsCWh6d621-XSZVs9TousY-ou5UpVNCnuQNjZYvIJeFIDynsu26xNsosN3E7hnY6YSCU1ybgNm0aH32vpG0pmDbi5wj-DNCe0zNRgYr96schsAVkD8iSG9Jt4b81qQc-vRPj6NuaqhPbIYwiOEt5PC-qC8i7LWpQ5owgv5B2Xwq0IYUPkVYIQXFQpeVdas_IaATMX48YGpac0MfgVGkV2KHmapftbgYKSyiY5y4NNbJjzvtKLBm_BL9ucPyLunI-wTPWGwGA2Pq2kyJ4u3GhkWaEtaHfXRRW7nGSPU-ZW28o6aE6GsqdwCjV6fsZpgSRjBZyd5fhURLkRWgR7-r5-UxMjQQQXf8lrnyb8uGtfa8gPraZbLFX9Psn51GU8vE7ZJ6Fx-_RS-7ziuGtBf6z9c04sB9lP4HVTeR2cBXRHUhuO1X97XdZ69r585F5rnbKwgzBHwD-AB_NoJYra5Mc"
             }
           ]
         },
@@ -2416,7 +2422,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer REDACTED_TOKEN"
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZmIwZDY3OS1hMmJjLTRmMmEtODdlZS02MDk5NzMwMmMxMjQiLCJqdGkiOiJlNDI5NTBjYTNhM2E0NzhjYzBmZTExMzliNjFkYTU2NDVhZTU3YjUyOTFkNjRlNmQyOGJjNjkwNzIyMGE0ZmMzYWU1N2FmZDJiMDQzNDNmMCIsImlhdCI6MTc2MTc3NTYxNi41OTYzNzgsIm5iZiI6MTc2MTc3NTYxNi41OTYzOCwiZXhwIjoxNzkzMzExNjE2LjU4MjM5MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.XifXvOEbBtaFkyMb4mCuMJ6jnFHin5z6Rq38DL53tMuY-JARYOMh6E49l59maxbCM1dpNMBFgXUMdg6cWqcCevmduobTHUvESfWF0mdsDWn78Xio7s1uSijJ0deNzKzv6DAMBh-hTEorCbuzGlXGEgLgVSDmSjFSTpM9TA9cQNE-8yuIVg6bivS6kz9t1xrzyrB76NwsdfIdcwEpgnqV8JlOsCWh6d621-XSZVs9TousY-ou5UpVNCnuQNjZYvIJeFIDynsu26xNsosN3E7hnY6YSCU1ybgNm0aH32vpG0pmDbi5wj-DNCe0zNRgYr96schsAVkD8iSG9Jt4b81qQc-vRPj6NuaqhPbIYwiOEt5PC-qC8i7LWpQ5owgv5B2Xwq0IYUPkVYIQXFQpeVdas_IaATMX48YGpac0MfgVGkV2KHmapftbgYKSyiY5y4NNbJjzvtKLBm_BL9ucPyLunI-wTPWGwGA2Pq2kyJ4u3GhkWaEtaHfXRRW7nGSPU-ZW28o6aE6GsqdwCjV6fsZpgSRjBZyd5fhURLkRWgR7-r5-UxMjQQQXf8lrnyb8uGtfa8gPraZbLFX9Psn51GU8vE7ZJ6Fx-_RS-7ziuGtBf6z9c04sB9lP4HVTeR2cBXRHUhuO1X97XdZ69r585F5rnbKwgzBHwD-AB_NoJYra5Mc"
             }
           ]
         },
@@ -2440,7 +2446,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "DISCORD_WEBHOOK_PLACEHOLDER",
+        "url": "https://discord.com/api/webhooks/1354095329623933010/tOP-swsOALRBWIogKZ7Z_yKHM3E0ROUKbH1t99qxegbDALVXW4ar5VIke9QX2ngay119",
         "sendBody": true,
         "specifyBody": "json",
         "jsonBody": "={{ JSON.stringify({ username: \"Content Pipeline\", embeds: [{ title: ($('Extract JSON').item.json.title || 'New Upload Published'), description: \"**\" + $('Extract JSON').item.json.title + \"**\n\n\" + ($('FETCH YT DATA').item.json.data.video.description ? $('FETCH YT DATA').item.json.data.video.description.substring(0, 300) + \"...\" : \"\") + \"\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n**Pipeline Status:**\n\u2705 Published to FL\n\u2705 Added to Buffer queue\n\u2705 SOM outreach dispatched\n\n\ud83d\udd17 View: https://web.freelabel.net/content/video/\" + ($json.content ? $json.content.id : \"\"), color: 5763719, image: { url: $('FETCH YT DATA').item.json.data.video.thumbnails.maxres ? $('FETCH YT DATA').item.json.data.video.thumbnails.maxres.url : \"\" }, footer: { text: \"FreeLabel Content Pipeline\" }, timestamp: new Date().toISOString() }] }) }}",
@@ -2466,7 +2472,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer REDACTED_TOKEN"
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZmIwZDY3OS1hMmJjLTRmMmEtODdlZS02MDk5NzMwMmMxMjQiLCJqdGkiOiJlNDI5NTBjYTNhM2E0NzhjYzBmZTExMzliNjFkYTU2NDVhZTU3YjUyOTFkNjRlNmQyOGJjNjkwNzIyMGE0ZmMzYWU1N2FmZDJiMDQzNDNmMCIsImlhdCI6MTc2MTc3NTYxNi41OTYzNzgsIm5iZiI6MTc2MTc3NTYxNi41OTYzOCwiZXhwIjoxNzkzMzExNjE2LjU4MjM5MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.XifXvOEbBtaFkyMb4mCuMJ6jnFHin5z6Rq38DL53tMuY-JARYOMh6E49l59maxbCM1dpNMBFgXUMdg6cWqcCevmduobTHUvESfWF0mdsDWn78Xio7s1uSijJ0deNzKzv6DAMBh-hTEorCbuzGlXGEgLgVSDmSjFSTpM9TA9cQNE-8yuIVg6bivS6kz9t1xrzyrB76NwsdfIdcwEpgnqV8JlOsCWh6d621-XSZVs9TousY-ou5UpVNCnuQNjZYvIJeFIDynsu26xNsosN3E7hnY6YSCU1ybgNm0aH32vpG0pmDbi5wj-DNCe0zNRgYr96schsAVkD8iSG9Jt4b81qQc-vRPj6NuaqhPbIYwiOEt5PC-qC8i7LWpQ5owgv5B2Xwq0IYUPkVYIQXFQpeVdas_IaATMX48YGpac0MfgVGkV2KHmapftbgYKSyiY5y4NNbJjzvtKLBm_BL9ucPyLunI-wTPWGwGA2Pq2kyJ4u3GhkWaEtaHfXRRW7nGSPU-ZW28o6aE6GsqdwCjV6fsZpgSRjBZyd5fhURLkRWgR7-r5-UxMjQQQXf8lrnyb8uGtfa8gPraZbLFX9Psn51GU8vE7ZJ6Fx-_RS-7ziuGtBf6z9c04sB9lP4HVTeR2cBXRHUhuO1X97XdZ69r585F5rnbKwgzBHwD-AB_NoJYra5Mc"
             }
           ]
         },
@@ -2484,7 +2490,8 @@
         960
       ],
       "disabled": true,
-      "continueOnFail": true
+      "continueOnFail": true,
+      "onError": "continueRegularOutput"
     },
     {
       "parameters": {
@@ -2495,7 +2502,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer REDACTED_TOKEN"
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZmIwZDY3OS1hMmJjLTRmMmEtODdlZS02MDk5NzMwMmMxMjQiLCJqdGkiOiJlNDI5NTBjYTNhM2E0NzhjYzBmZTExMzliNjFkYTU2NDVhZTU3YjUyOTFkNjRlNmQyOGJjNjkwNzIyMGE0ZmMzYWU1N2FmZDJiMDQzNDNmMCIsImlhdCI6MTc2MTc3NTYxNi41OTYzNzgsIm5iZiI6MTc2MTc3NTYxNi41OTYzOCwiZXhwIjoxNzkzMzExNjE2LjU4MjM5MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.XifXvOEbBtaFkyMb4mCuMJ6jnFHin5z6Rq38DL53tMuY-JARYOMh6E49l59maxbCM1dpNMBFgXUMdg6cWqcCevmduobTHUvESfWF0mdsDWn78Xio7s1uSijJ0deNzKzv6DAMBh-hTEorCbuzGlXGEgLgVSDmSjFSTpM9TA9cQNE-8yuIVg6bivS6kz9t1xrzyrB76NwsdfIdcwEpgnqV8JlOsCWh6d621-XSZVs9TousY-ou5UpVNCnuQNjZYvIJeFIDynsu26xNsosN3E7hnY6YSCU1ybgNm0aH32vpG0pmDbi5wj-DNCe0zNRgYr96schsAVkD8iSG9Jt4b81qQc-vRPj6NuaqhPbIYwiOEt5PC-qC8i7LWpQ5owgv5B2Xwq0IYUPkVYIQXFQpeVdas_IaATMX48YGpac0MfgVGkV2KHmapftbgYKSyiY5y4NNbJjzvtKLBm_BL9ucPyLunI-wTPWGwGA2Pq2kyJ4u3GhkWaEtaHfXRRW7nGSPU-ZW28o6aE6GsqdwCjV6fsZpgSRjBZyd5fhURLkRWgR7-r5-UxMjQQQXf8lrnyb8uGtfa8gPraZbLFX9Psn51GU8vE7ZJ6Fx-_RS-7ziuGtBf6z9c04sB9lP4HVTeR2cBXRHUhuO1X97XdZ69r585F5rnbKwgzBHwD-AB_NoJYra5Mc"
             }
           ]
         },
@@ -2573,7 +2580,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer REDACTED_TOKEN"
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZmIwZDY3OS1hMmJjLTRmMmEtODdlZS02MDk5NzMwMmMxMjQiLCJqdGkiOiJlNDI5NTBjYTNhM2E0NzhjYzBmZTExMzliNjFkYTU2NDVhZTU3YjUyOTFkNjRlNmQyOGJjNjkwNzIyMGE0ZmMzYWU1N2FmZDJiMDQzNDNmMCIsImlhdCI6MTc2MTc3NTYxNi41OTYzNzgsIm5iZiI6MTc2MTc3NTYxNi41OTYzOCwiZXhwIjoxNzkzMzExNjE2LjU4MjM5MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.XifXvOEbBtaFkyMb4mCuMJ6jnFHin5z6Rq38DL53tMuY-JARYOMh6E49l59maxbCM1dpNMBFgXUMdg6cWqcCevmduobTHUvESfWF0mdsDWn78Xio7s1uSijJ0deNzKzv6DAMBh-hTEorCbuzGlXGEgLgVSDmSjFSTpM9TA9cQNE-8yuIVg6bivS6kz9t1xrzyrB76NwsdfIdcwEpgnqV8JlOsCWh6d621-XSZVs9TousY-ou5UpVNCnuQNjZYvIJeFIDynsu26xNsosN3E7hnY6YSCU1ybgNm0aH32vpG0pmDbi5wj-DNCe0zNRgYr96schsAVkD8iSG9Jt4b81qQc-vRPj6NuaqhPbIYwiOEt5PC-qC8i7LWpQ5owgv5B2Xwq0IYUPkVYIQXFQpeVdas_IaATMX48YGpac0MfgVGkV2KHmapftbgYKSyiY5y4NNbJjzvtKLBm_BL9ucPyLunI-wTPWGwGA2Pq2kyJ4u3GhkWaEtaHfXRRW7nGSPU-ZW28o6aE6GsqdwCjV6fsZpgSRjBZyd5fhURLkRWgR7-r5-UxMjQQQXf8lrnyb8uGtfa8gPraZbLFX9Psn51GU8vE7ZJ6Fx-_RS-7ziuGtBf6z9c04sB9lP4HVTeR2cBXRHUhuO1X97XdZ69r585F5rnbKwgzBHwD-AB_NoJYra5Mc"
             }
           ]
         },
@@ -2589,7 +2596,8 @@
       "position": [
         384,
         1200
-      ]
+      ],
+      "onError": "continueRegularOutput"
     },
     {
       "parameters": {
@@ -2600,7 +2608,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer REDACTED_TOKEN"
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZmIwZDY3OS1hMmJjLTRmMmEtODdlZS02MDk5NzMwMmMxMjQiLCJqdGkiOiJlNDI5NTBjYTNhM2E0NzhjYzBmZTExMzliNjFkYTU2NDVhZTU3YjUyOTFkNjRlNmQyOGJjNjkwNzIyMGE0ZmMzYWU1N2FmZDJiMDQzNDNmMCIsImlhdCI6MTc2MTc3NTYxNi41OTYzNzgsIm5iZiI6MTc2MTc3NTYxNi41OTYzOCwiZXhwIjoxNzkzMzExNjE2LjU4MjM5MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.XifXvOEbBtaFkyMb4mCuMJ6jnFHin5z6Rq38DL53tMuY-JARYOMh6E49l59maxbCM1dpNMBFgXUMdg6cWqcCevmduobTHUvESfWF0mdsDWn78Xio7s1uSijJ0deNzKzv6DAMBh-hTEorCbuzGlXGEgLgVSDmSjFSTpM9TA9cQNE-8yuIVg6bivS6kz9t1xrzyrB76NwsdfIdcwEpgnqV8JlOsCWh6d621-XSZVs9TousY-ou5UpVNCnuQNjZYvIJeFIDynsu26xNsosN3E7hnY6YSCU1ybgNm0aH32vpG0pmDbi5wj-DNCe0zNRgYr96schsAVkD8iSG9Jt4b81qQc-vRPj6NuaqhPbIYwiOEt5PC-qC8i7LWpQ5owgv5B2Xwq0IYUPkVYIQXFQpeVdas_IaATMX48YGpac0MfgVGkV2KHmapftbgYKSyiY5y4NNbJjzvtKLBm_BL9ucPyLunI-wTPWGwGA2Pq2kyJ4u3GhkWaEtaHfXRRW7nGSPU-ZW28o6aE6GsqdwCjV6fsZpgSRjBZyd5fhURLkRWgR7-r5-UxMjQQQXf8lrnyb8uGtfa8gPraZbLFX9Psn51GU8vE7ZJ6Fx-_RS-7ziuGtBf6z9c04sB9lP4HVTeR2cBXRHUhuO1X97XdZ69r585F5rnbKwgzBHwD-AB_NoJYra5Mc"
             }
           ]
         },
@@ -2616,7 +2624,8 @@
       "position": [
         384,
         1392
-      ]
+      ],
+      "onError": "continueRegularOutput"
     },
     {
       "parameters": {
@@ -2684,7 +2693,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer REDACTED_TOKEN"
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZmIwZDY3OS1hMmJjLTRmMmEtODdlZS02MDk5NzMwMmMxMjQiLCJqdGkiOiJlNDI5NTBjYTNhM2E0NzhjYzBmZTExMzliNjFkYTU2NDVhZTU3YjUyOTFkNjRlNmQyOGJjNjkwNzIyMGE0ZmMzYWU1N2FmZDJiMDQzNDNmMCIsImlhdCI6MTc2MTc3NTYxNi41OTYzNzgsIm5iZiI6MTc2MTc3NTYxNi41OTYzOCwiZXhwIjoxNzkzMzExNjE2LjU4MjM5MSwic3ViIjoiIiwic2NvcGVzIjpbXX0.XifXvOEbBtaFkyMb4mCuMJ6jnFHin5z6Rq38DL53tMuY-JARYOMh6E49l59maxbCM1dpNMBFgXUMdg6cWqcCevmduobTHUvESfWF0mdsDWn78Xio7s1uSijJ0deNzKzv6DAMBh-hTEorCbuzGlXGEgLgVSDmSjFSTpM9TA9cQNE-8yuIVg6bivS6kz9t1xrzyrB76NwsdfIdcwEpgnqV8JlOsCWh6d621-XSZVs9TousY-ou5UpVNCnuQNjZYvIJeFIDynsu26xNsosN3E7hnY6YSCU1ybgNm0aH32vpG0pmDbi5wj-DNCe0zNRgYr96schsAVkD8iSG9Jt4b81qQc-vRPj6NuaqhPbIYwiOEt5PC-qC8i7LWpQ5owgv5B2Xwq0IYUPkVYIQXFQpeVdas_IaATMX48YGpac0MfgVGkV2KHmapftbgYKSyiY5y4NNbJjzvtKLBm_BL9ucPyLunI-wTPWGwGA2Pq2kyJ4u3GhkWaEtaHfXRRW7nGSPU-ZW28o6aE6GsqdwCjV6fsZpgSRjBZyd5fhURLkRWgR7-r5-UxMjQQQXf8lrnyb8uGtfa8gPraZbLFX9Psn51GU8vE7ZJ6Fx-_RS-7ziuGtBf6z9c04sB9lP4HVTeR2cBXRHUhuO1X97XdZ69r585F5rnbKwgzBHwD-AB_NoJYra5Mc"
             }
           ]
         },
@@ -2775,6 +2784,61 @@
         400
       ],
       "webhookId": "6a89003c-bddf-4c41-b2c6-2a1af3243ca1"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.upload-post.com/api/upload_text",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Apikey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZXhAZnJlZWxhYmVsLm5ldCIsImV4cCI6NDkxNjQ5MTgwOCwianRpIjoiZTQ1NGRkZjQtNGZmMC00OTgxLTgzNGMtMThjOTM3OWE1NDk2In0.hubTMYNRZDcjNvJwOgbY3sQ7-xUVQ7Scu8iShXuOVyE"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "multipart-form-data",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "user",
+              "value": "freelabelnet"
+            },
+            {
+              "name": "platform[]",
+              "value": "x"
+            },
+            {
+              "name": "title",
+              "value": "={{ $json.tweet_text }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "f3b61c2d-c2d3-4a70-8aaa-0924fef18aa6",
+      "name": "Twitter Post NOW",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        384,
+        1584
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Build the tweet for the single best freshly-published video, linking to its\n// FreeLabel content page. Runs AFTER PUBLISH TO FL \u2014 each input item is the\n// content API response: { success, data: { content: { id, media_id, title } } }.\n// View counts (to pick the best) come from FETCH YT DATA, matched by media_id.\nconst FL_HOST = 'https://freelabel.net';\nconst published = $input.all();\n\nconst views = {};\nconst titles = {};\ntry {\n  for (const it of $('FETCH YT DATA').all()) {\n    const v = it.json && it.json.data && it.json.data.video;\n    if (v && v.id) {\n      views[v.id] = parseInt(v.viewCount || '0', 10) || 0;\n      titles[v.id] = v.title;\n    }\n  }\n} catch (e) { /* FETCH YT DATA unavailable \u2014 fall back to content titles */ }\n\nlet best = null;\nlet bestViews = -1;\nfor (const p of published) {\n  const c = (p.json && (p.json.data && p.json.data.content)) || (p.json && p.json.content);\n  if (!c || !c.id) continue;                 // need a real FreeLabel content id for the link\n  const mediaId = c.media_id;\n  const vc = views[mediaId] != null ? views[mediaId] : 0;\n  if (vc > bestViews) {\n    bestViews = vc;\n    best = { contentId: c.id, title: (mediaId && titles[mediaId]) || c.title || '' };\n  }\n}\n\nif (!best) return [];                         // nothing publishable \u2192 no tweet\n\nconst url = `${FL_HOST}/content/video/${best.contentId}`;\nconst tweet_text = [best.title, url, '#Discover #Music #AI'].filter(Boolean).join('\\n\\n');\nreturn [{ json: { tweet_text, video_url: url, content_id: best.contentId, title: best.title } }];"
+      },
+      "id": "b75dc595-eaaf-4a5b-94a2-b3034089d0b1",
+      "name": "Pick Best Video",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        560,
+        1584
+      ]
     }
   ],
   "connections": {
@@ -2845,6 +2909,11 @@
           },
           {
             "node": "Buffer Threads Post",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Pick Best Video",
             "type": "main",
             "index": 0
           }
@@ -3698,6 +3767,17 @@
         [
           {
             "node": "Content Curation",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pick Best Video": {
+      "main": [
+        [
+          {
+            "node": "Twitter Post NOW",
             "type": "main",
             "index": 0
           }
@@ -11077,50 +11157,47 @@
       }
     ]
   },
-  "versionId": "997eb55c-c7f1-48fb-89d5-0c974e866500",
+  "versionId": "67a75dfa-49a9-4f8b-9e53-35e5f245f263",
   "triggerCount": 4,
   "shared": [
     {
-      "createdAt": "2026-02-20T19:26:47.962Z",
-      "updatedAt": "2026-02-20T19:26:47.962Z",
+      "createdAt": "2026-05-23T06:28:16.840Z",
+      "updatedAt": "2026-05-23T06:28:16.840Z",
       "role": "workflow:owner",
       "workflowId": "IeiQIvPwcMMEYjVr",
-      "projectId": "Pbcht1ccqyluUAgv",
+      "projectId": "MOSnHE6MwTa3z6G1",
       "project": {
-        "createdAt": "2026-02-20T03:15:31.074Z",
-        "updatedAt": "2026-04-25T14:52:44.588Z",
-        "id": "Pbcht1ccqyluUAgv",
+        "createdAt": "2026-05-23T06:28:15.612Z",
+        "updatedAt": "2026-05-23T06:29:24.593Z",
+        "id": "MOSnHE6MwTa3z6G1",
         "name": "Alex Mayo <alex@freelabel.net>",
         "type": "personal",
         "icon": null,
         "description": null,
         "projectRelations": [
           {
-            "createdAt": "2026-02-20T03:15:31.074Z",
-            "updatedAt": "2026-02-20T03:15:31.074Z",
-            "userId": "86c37cf4-64b2-432b-9035-5446a6e7182d",
-            "projectId": "Pbcht1ccqyluUAgv",
+            "createdAt": "2026-05-23T06:28:15.612Z",
+            "updatedAt": "2026-05-23T06:28:15.612Z",
+            "userId": "06fe42fd-4e78-4feb-b0ad-1c6ada7cbe74",
+            "projectId": "MOSnHE6MwTa3z6G1",
             "user": {
-              "createdAt": "2026-02-20T03:15:30.727Z",
-              "updatedAt": "2026-04-26T13:21:55.622Z",
-              "id": "86c37cf4-64b2-432b-9035-5446a6e7182d",
+              "createdAt": "2026-05-23T06:28:14.812Z",
+              "updatedAt": "2026-06-06T04:21:51.112Z",
+              "id": "06fe42fd-4e78-4feb-b0ad-1c6ada7cbe74",
               "email": "alex@freelabel.net",
               "firstName": "Alex",
               "lastName": "Mayo",
               "personalizationAnswers": {
                 "version": "v4",
-                "personalization_survey_submitted_at": "2026-02-20T04:15:12.368Z",
+                "personalization_survey_submitted_at": "2026-05-23T06:29:53.440Z",
                 "personalization_survey_n8n_version": "1.114.2"
               },
               "settings": {
-                "userActivated": true,
-                "easyAIWorkflowOnboarded": true,
-                "firstSuccessfulWorkflowId": "IeiQIvPwcMMEYjVr",
-                "userActivatedAt": 1776214278896
+                "userActivated": false
               },
               "disabled": false,
               "mfaEnabled": false,
-              "lastActiveAt": "2026-04-26",
+              "lastActiveAt": "2026-06-06",
               "isPending": false
             }
           }
@@ -11128,5 +11205,16 @@
       }
     }
   ],
-  "tags": []
+  "tags": [],
+  "parentFolder": null,
+  "scopes": [
+    "workflow:create",
+    "workflow:delete",
+    "workflow:execute",
+    "workflow:list",
+    "workflow:move",
+    "workflow:read",
+    "workflow:share",
+    "workflow:update"
+  ]
 }
